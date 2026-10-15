@@ -1,0 +1,49 @@
+{
+  "schema": "software-engineering-security-bundle/v1",
+  "name": "software-engineering-security",
+  "display_name": "软件工程安全防破解",
+  "version": "1.1.1",
+  "format": "Agent Skills",
+  "entrypoint": "SKILL.md",
+  "standalone_prompt": "PROMPT.md",
+  "contains_executable_scripts": false,
+  "auto_update": false,
+  "repository": "https://github.com/b0wDi/software-engineering-security",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 45,
+      "sha256": "81e6ce8e73d0943aae730758d61353273a4944d5ffca99840d1c1b81be302731"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 550,
+      "sha256": "7cff23b704938f30a9679eb5f30c464c4abc76244dcd0f73c6766c3b6feec1b4"
+    },
+    {
+      "path": "PROMPT.md",
+      "bytes": 24072,
+      "sha256": "d9d825e51f2e278a4411f2a1f7462ae8760f0b6b5f3a61cd5343efee3c505a79"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5783,
+      "sha256": "9f676e38ae764ea347ed0f68ab54ecca261f4b9adcdda745ce133af711232254"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4312,
+      "sha256": "51db8a2e4570de247f20f6994f58f52c36bbda1c826b9a2e4d70fe047c6a29f5"
+    },
+    {
+      "path": "references/acceptance-checklist.md",
+      "bytes": 6485,
+      "sha256": "1e27cb15d441780b561429e3a50bfaf55886c79f974883caf3822cc8f64874e4"
+    },
+    {
+      "path": "references/security-playbook.md",
+      "bytes": 16965,
+      "sha256": "832fdc3c077b36427c3b87a8a0e1d035a636bca69eb1f2de8d0ec29243d8f865"
+    }
+  ]
+}
