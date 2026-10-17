@@ -1,6 +1,6 @@
 # 软件工程安全防破解
 
-**Software Engineering Security · Agent Skill · v1.1.1**
+**Software Engineering Security · Agent Skill · v1.2.0**
 
 面向自有或明确授权软件的安全工程技能：LLVM混淆与代码虚拟化、服务端鉴权、WebSocket心跳、TLS/AEAD、nonce防重放、反调试、模块注入与Hook检测、跨平台完整性和测试验收。
 
@@ -39,9 +39,9 @@ https://raw.githubusercontent.com/b0wDi/software-engineering-security/main/PROMP
 ## 下载固定版本
 
 - [最新GitHub Release](https://github.com/b0wDi/software-engineering-security/releases/latest)
-- [v1.1.1技能ZIP](https://github.com/b0wDi/software-engineering-security/releases/download/v1.1.1/software-engineering-security-v1.1.1.zip)
-- [v1.1.1 ZIP校验值](https://github.com/b0wDi/software-engineering-security/releases/download/v1.1.1/SHA256SUMS.txt)
-- [固定v1.1.1的完整提示词](https://raw.githubusercontent.com/b0wDi/software-engineering-security/v1.1.1/PROMPT.md)
+- [v1.2.0技能ZIP](https://github.com/b0wDi/software-engineering-security/releases/download/v1.2.0/software-engineering-security-v1.2.0.zip)
+- [v1.2.0 ZIP校验值](https://github.com/b0wDi/software-engineering-security/releases/download/v1.2.0/SHA256SUMS.txt)
+- [固定v1.2.0的完整提示词](https://raw.githubusercontent.com/b0wDi/software-engineering-security/v1.2.0/PROMPT.md)
 
 `main`链接可能随提交更新。需要可复现使用时，使用固定tag或完整commit。安装后的本地副本不会因远端更新而自动改变。
 
@@ -69,7 +69,11 @@ software-engineering-security/
 ├── SKILL.md                         # 入口和工作流程
 ├── references/
 │   ├── security-playbook.md         # 完整安全工程规范
-│   └── acceptance-checklist.md      # 验收清单
+│   ├── acceptance-checklist.md      # 验收清单
+│   ├── protocol-tests.md            # 协议/心跳负向测试矩阵
+│   ├── rea-audit.md                 # 可选REA产物证据审计
+│   ├── security-report-template.md  # 可填写交付模板
+│   └── skill-evaluation.md          # Skill行为评估用例
 ├── PROMPT.md                        # 自包含版本
 ├── README.md
 ├── CHANGELOG.md
@@ -92,6 +96,13 @@ Windows可用`Get-FileHash -Algorithm SHA256`对照清单。同源哈希用于�
 
 ## 版本与来源
 
-v1.1.1增加GitHub发布、安装和固定版本下载说明；安全规范沿用v1.1.0。原世界本地技能与云端旧包不被覆盖、不自动同步。
+v1.2.0补充可选REA审计、证据分级、协议负向测试、供应链/更新和回滚要求。仍是文档型Skill，不附带执行脚本；不要求安装REA，不自动升级任何MCP。世界等本地安装副本与GitHub版本分别管理，只有明确更新时才同步；旧发行包保留。
+
+### 本次新增内容
+
+- [协议测试矩阵](references/protocol-tests.md)：并发防重放、幂等故障、租约与会话切换。
+- [REA辅助审计](references/rea-audit.md)：发行产物证据、工具边界、脱敏与版本更新纪律。
+- [交付模板](references/security-report-template.md)：把发现、改动、测试与未知逐项对应。
+- [Skill评估用例](references/skill-evaluation.md)：防止越权执行、虚假完成与能力夸大；不是已经通过的测试记录。
 
 参考：[Agent Skills规范](https://agentskills.io/specification) · [Claude Code](https://code.claude.com/docs/en/skills) · [Cursor](https://cursor.com/docs/skills) · [Codex](https://developers.openai.com/codex/skills) · [skills CLI](https://github.com/vercel-labs/skills)
